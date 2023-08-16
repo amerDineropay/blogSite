@@ -7,16 +7,20 @@ interface FormatDateProps {
 
 export const formatDateFunc = ({ date, locale }: FormatDateProps) => {
   if (!locale || !date) return null;
+  console.log(locale);
 
-  return new Intl.DateTimeFormat(locale, {
-    dateStyle: 'long',
+  const da = new Intl.DateTimeFormat(locale, {
+    dateStyle: `${locale !== 'ar' ? 'full' : 'long'}`,
   }).format(new Date(date));
+  return da;
 };
 
 export const FormatDate = (props: FormatDateProps) => {
   const { locale: localeFromRouter } = useRouter();
 
   if (!localeFromRouter) return null;
+  const da = `${formatDateFunc({ ...props, locale: localeFromRouter })}`;
 
-  return <>{formatDateFunc({ ...props, locale: localeFromRouter })}</>;
+  // console.log(typeof da, da, data);
+  return <>{da}</>;
 };

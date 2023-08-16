@@ -88,8 +88,7 @@ export const LanguageSelectorDesktop = ({ localeName, displayName }) => {
         aria-expanded={isOpen}
         aria-controls="menu-locale"
         className="flex items-center font-normal uppercase"
-        onClick={() => setIsOpen(currentState => !currentState)}
-      >
+        onClick={() => setIsOpen(currentState => !currentState)}>
         <LanguageIcon width="18px" height="18px" variant="secondary" className="mr-1 ml-1" />
         {localeName(router.locale)}
         {isOpen ? (
@@ -107,8 +106,7 @@ export const LanguageSelectorDesktop = ({ localeName, displayName }) => {
           )}
           id="menu-locale"
           role="menu"
-          onKeyDown={handleMenuKeyDown}
-        >
+          onKeyDown={handleMenuKeyDown}>
           {localesToShow?.map((availableLocale, index) => (
             <li key={availableLocale} role="none">
               <Link
@@ -121,8 +119,7 @@ export const LanguageSelectorDesktop = ({ localeName, displayName }) => {
                 }}
                 as={router.asPath}
                 locale={availableLocale}
-                onClick={() => setIsOpen(false)}
-              >
+                onClick={() => setIsOpen(false)}>
                 {displayName(availableLocale).of(localeName(availableLocale))}
               </Link>
             </li>

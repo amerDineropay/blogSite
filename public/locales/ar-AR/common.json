@@ -1,22 +1,21 @@
 {
   "article": {
-    "relatedArticles": "Verwandte Artikel",
-    "featured": "gekennzeichnet"
+    "relatedArticles": "مقالات مقترحة",
+    "featured": "إعلان"
   },
   "landingPage": {
-    "latestArticles": "Neueste Artikel"
+    "latestArticles": "المقالات الحديثة"
   },
   "common": {
     "homepage": "Startseite",
     "regionalSettings": "Regionale Einstellungen",
     "language": "Sprache",
     "languageDrawer": "Sprachschublade umschalten"
-
   },
   "footer": {
-    "aboutUs": "über uns",
+    "aboutUs": "من نحن",
     "description": "Unser Unternehmen ist auf die Entwicklung fortschrittlicher Technologien für eine Vielzahl von Branchen spezialisiert. Wir verwenden modernste Techniken und Algorithmen, um intelligente Systeme zu erstellen, die Unternehmen dabei helfen können, Aufgaben zu automatisieren, die Effizienz zu verbessern und Innovationen voranzutreiben.",
-    "powerBy": "Unterstützt von"
+    "powerBy": "Dinero Pay"
   },
   "notFound": {
     "title": "Seite nicht gefunden",
