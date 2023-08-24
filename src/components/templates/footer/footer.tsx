@@ -7,21 +7,68 @@ export const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="border-t-color mt-10 border-t border-gray200">
-      <Container className="py-8">
-        <h2 className="h4 mb-4">{t('footer.aboutUs')}</h2>
-        <div className="max-w-4xl">{t('footer.description')}</div>
-        <div className="mt-8">
-          {t('footer.powerBy')}{' '}
-          <Link
-            href="https://dineropay.com"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="text-blue500">
-            Dineropay
-          </Link>
+    <section className="footer">
+      <div className="footer--main">
+        <div className="container">
+          <div className="col3">
+            <div className="col">
+              <h3 className="col__header" data-i18n="footer:help">
+                Help and resources
+              </h3>
+              <span className="col__header--list">
+                <a href="/faq" data-i18n="footer:faq">
+                  FAQ
+                </a>
+              </span>
+              <span className="col__header--list">
+                <a href="https://docs.dineropay.com" data-i18n="footer:dev">
+                  API documenation
+                </a>
+              </span>
+              <span className="col__header--list">
+                <a href="https://docs.dineropay.com" data-i18n="nav:blog">
+                  Blog
+                </a>
+              </span>
+            </div>
+            <div className="col">
+              <h3 className="col__header" data-i18n="footer:contact">
+                Contact Us
+              </h3>
+              <h4 className="col__header--sub" data-i18n="footer:sales">
+                Sales
+              </h4>
+              <span className="col__header--list">
+                <a href="mailto:sales@dineropay.com">sales@dineropay.com</a>
+              </span>
+              <h4 className="col__header--sub" data-i18n="footer:supp">
+                Support
+              </h4>
+              <span className="col__header--list">
+                <a href="mailto:support@dineropay.com">support@dineropay.com</a>
+              </span>
+              <h4 className="col__header--sub" data-i18n="footer:tel">
+                Telephone
+              </h4>
+              <span className="col__header--list">
+                <a href="tel:920013423">920013423</a>
+              </span>
+              <span className="proof">
+                {' '}
+                <img src="/assets/svg/logo-horiz.svg" alt="" />{' '}
+                <img src="/assets/svg/pci.svg" alt="" />
+              </span>
+            </div>
+          </div>
         </div>
-      </Container>
-    </footer>
+        <a href="/">
+          <img
+            className="footer__logo"
+            src="/assets/svg/dinero-pay-logo.svg"
+            alt="Dinero Pay Logo"
+          />
+        </a>
+      </div>
+    </section>
   );
 };

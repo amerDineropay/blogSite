@@ -14,7 +14,7 @@ export const ArticleAuthor = ({ article }: ArticleAuthorProps) => {
   return (
     <div className="flex items-center">
       <div
-        className="mr-2 overflow-hidden rounded-full border border-blue500"
+        className="mr-2 overflow-hidden rounded-full border border-blue500  rtl:ml-1"
         {...inspectorProps({ fieldId: 'avatar' })}>
         {author?.avatar && (
           <CtfImage

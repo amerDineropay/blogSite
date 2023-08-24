@@ -15,7 +15,7 @@ export const Header = () => {
           <Link href="/" title={t('common.homepage')}>
             <BlogLogo />
           </Link>
-          <LanguageSelector />
+          {/* <LanguageSelector /> */}
         </Container>
       </nav>
     </header>

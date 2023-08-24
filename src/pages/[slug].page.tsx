@@ -29,7 +29,9 @@ const Page = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
       </Container>
       {relatedPosts && (
         <Container className="mt-8 max-w-5xl">
-          <h2 className="mb-4 md:mb-6">{t('article.relatedArticles')}</h2>
+          {relatedPosts.length > 0 && (
+            <h2 className="mb-4 md:mb-6">{t('landingPage.latestArticles')}</h2>
+          )}
           <ArticleTileGrid className="md:grid-cols-2" articles={relatedPosts} />
         </Container>
       )}

@@ -1,6 +1,7 @@
 import { useContentfulLiveUpdates } from '@contentful/live-preview/react';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 import { getServerSideTranslations } from './utils/get-serverside-translations';
@@ -19,6 +20,7 @@ const Page = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const posts = useContentfulLiveUpdates(props.posts);
 
   if (!page?.featuredBlogPost || !posts) return;
+  console.log(posts);
 
   return (
     <>
@@ -36,7 +38,7 @@ const Page = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
       {/*</Container>*/}
 
       <Container className="my-8  md:mb-10 lg:mb-16">
-        <h2 className="mb-4 md:mb-6">{t('landingPage.latestArticles')}</h2>
+        {posts.length > 0 && <h2 className="mb-4 md:mb-6">{t('landingPage.latestArticles')}</h2>}
         <ArticleTileGrid className="md:grid-cols-2 lg:grid-cols-3" articles={posts} />
       </Container>
     </>

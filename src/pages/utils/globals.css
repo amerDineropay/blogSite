@@ -2,33 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #01a6e7;
+  --secondary: #0069ab;
+  --light: #abddff;
+  --lighter: #6fa2be;
+  --spacer: 30px;
+  --margin: 0 151px;
+  --font-weight-big: 700;
+  --font-weight-mid: 400;
+  --font-size-big: 57px;
+  --font-size-mid: 37px;
+  --font-size-small: 24px;
+  --font-type-header: 'Open Sans', sans-serif;
+}
+
 @layer base {
   body {
-    @apply text-sm text-gray800 md:text-sm bg-gray100;
+    @apply bg-gray100 text-sm text-gray800 md:text-sm;
   }
 
   .h1,
   h1 {
-    @apply text-xl leading-tighter font-semibold md:text-4xl;
+    @apply text-xl font-semibold leading-tighter md:text-4xl;
   }
 
   .h2,
   h2 {
-    @apply text-xl leading-tight font-semibold md:text-3xl;
+    @apply text-xl font-semibold leading-tight md:text-3xl;
   }
 
   .h3,
   h3 {
-    @apply text-base leading-relaxed font-semibold md:text-xl;
+    @apply text-base font-semibold leading-relaxed md:text-xl;
   }
 
   .h4,
   h4 {
-    @apply text-xs leading-normal font-semibold md:text-base;
+    @apply text-xs font-semibold leading-normal md:text-base;
   }
 
   p {
-    @apply text-gray600 tracking-snug font-normal leading-snug md:leading-normal;
+    @apply font-normal leading-snug tracking-snug text-gray600 md:leading-normal;
   }
 }
+.footer {
+  width: 100%;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer--main {
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.33);
+  border-radius: 10px 10px 0 0;
+}
+.col3 {
+  max-width: 1000px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.col__header {
+  margin-bottom: 10px;
+  font-weight: var(--font-weight-big);
+}
+.col__header--list {
+  display: block;
+  /* margin-bottom: 10px; */
+}
+.col__header--sub {
+  /* margin-bottom: 10px; */
+}
+.col__header--list a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.footer__logo {
+  width: 9rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+.proof {
+  display: flex;
+  gap: 9px;
+}
+.proof img {
+  object-fit: contain;
+  /* width: 110px; */
+  max-width: 80px;
+  max-height: 110px;
+  width: auto;
+  height: auto;
+  /* height: 100px; */
+}
+.container {
+  padding: var(--margin);
+}

@@ -7,7 +7,7 @@ interface FormatDateProps {
 
 export const formatDateFunc = ({ date, locale }: FormatDateProps) => {
   if (!locale || !date) return null;
-  console.log(locale);
+  // console.log(locale);
 
   const da = new Intl.DateTimeFormat(locale, {
     dateStyle: `${locale !== 'ar' ? 'full' : 'long'}`,
