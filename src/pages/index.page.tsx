@@ -20,7 +20,6 @@ const Page = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const posts = useContentfulLiveUpdates(props.posts);
 
   if (!page?.featuredBlogPost || !posts) return;
-  console.log(posts);
 
   return (
     <>

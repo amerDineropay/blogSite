@@ -9,7 +9,7 @@ export const Footer = () => {
   return (
     <section className="footer">
       <div className="footer--main">
-        <div className="container">
+        <div className="contain">
           <div className="col3">
             <div className="col">
               <h3 className="col__header" data-i18n="footer:help">

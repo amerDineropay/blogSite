@@ -105,6 +105,30 @@
   height: auto;
   /* height: 100px; */
 }
-.container {
+.contain {
   padding: var(--margin);
+  /* width: 100%; */
+}
+
+@media only screen and (max-width: 1400px) {
+  .contain {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  :root {
+    --font-weight-big: 700;
+    --font-weight-mid: 400;
+    --font-size-big: 30px;
+    --font-size-mid: 30px;
+    --font-size-small: 15px;
+  }
+  .proof {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .contain {
+    padding: 0 20px;
+  }
 }
