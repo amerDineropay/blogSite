@@ -13,9 +13,14 @@
     "languageDrawer": "Sprachschublade umschalten"
   },
   "footer": {
-    "aboutUs": "من نحن",
-    "description": "Unser Unternehmen ist auf die Entwicklung fortschrittlicher Technologien für eine Vielzahl von Branchen spezialisiert. Wir verwenden modernste Techniken und Algorithmen, um intelligente Systeme zu erstellen, die Unternehmen dabei helfen können, Aufgaben zu automatisieren, die Effizienz zu verbessern und Innovationen voranzutreiben.",
-    "powerBy": "Dinero Pay"
+    "help": "المساعدة والموارد",
+    "faq": "الأسئلة الشائعة",
+    "dev": "مطورين",
+    "contact": "تواصل معنا",
+    "sales": "المبيعات",
+    "supp": "الدعم",
+    "tel": "الهاتف",
+    "blog": "المدونة"
   },
   "notFound": {
     "title": "Seite nicht gefunden",

@@ -13,9 +13,14 @@
     "languageDrawer": "Toggle language drawer"
   },
   "footer": {
-    "aboutUs": "about us",
-    "description": "Our company specialises in the fintech feild",
-    "powerBy": "Powered by"
+    "help": "Help and resource",
+    "faq": "FAQ",
+    "dev": "API documentation",
+    "contact": "Contact us",
+    "sales": "Sales",
+    "supp": "Support",
+    "tel": "Telephone",
+    "blog": "Blog"
   },
   "notFound": {
     "title": "Page not found",

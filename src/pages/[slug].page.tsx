@@ -28,7 +28,7 @@ const Page = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
         <ArticleContent article={blogPost} />
       </Container>
       {relatedPosts && (
-        <Container className="mt-8 max-w-5xl">
+        <Container className="mt-8 mb-8 max-w-5xl">
           {relatedPosts.length > 0 && (
             <h2 className="mb-4 md:mb-6">{t('landingPage.latestArticles')}</h2>
           )}
