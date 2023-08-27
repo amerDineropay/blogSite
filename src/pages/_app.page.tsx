@@ -35,7 +35,9 @@ const App = ({ Component, pageProps }: AppProps) => {
       enableLiveUpdates={pageProps.previewActive}
       locale={locale || 'en-US'}>
       <>
-        <main className={`${autoPro.className}`}>
+        <main
+          style={{ display: 'flex', flexDirection: 'column' }}
+          className={`${autoPro.className}`}>
           <Layout>
             <Component {...pageProps} />
           </Layout>
