@@ -1054,6 +1054,11 @@
     "@babel/helper-validator-identifier" "^7.22.5"
     to-fast-properties "^2.0.0"
 
+"@builder.io/partytown@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.npmjs.org/@builder.io/partytown/-/partytown-0.8.0.tgz"
+  integrity sha512-M6H7nSMwW2dHd1/MQ+9J1Jqdw22uhl1nKv90kIiL9G7gjFVqqouQp4qSS1oZclmtW1XjAa4Q5UnbHB4iytmxZA==
+
 "@contentful/f36-core@^4.23.2", "@contentful/f36-core@^4.23.3":
   version "4.23.3"
   resolved "https://registry.npmjs.org/@contentful/f36-core/-/f36-core-4.23.3.tgz"
