@@ -16,7 +16,7 @@ export const Footer = () => {
                 {t('footer.help')}
               </h3>
               <span className="col__header--list">
-                <a href="/faq" data-i18n="footer:faq">
+                <a href="https://www.dineropay.com/faq" data-i18n="footer:faq">
                   {t('footer.faq')}
                 </a>
               </span>
