@@ -8,9 +8,9 @@
   },
   "common": {
     "homepage": "Startseite",
-    "regionalSettings": "Regionale Einstellungen",
-    "language": "Sprache",
-    "languageDrawer": "Sprachschublade umschalten"
+    "regionalSettings": "اختر اللغة",
+    "language": "اللغة",
+    "languageDrawer": "اختر اللغة"
   },
   "footer": {
     "help": "المساعدة والموارد",
@@ -23,7 +23,7 @@
     "blog": "المدونة"
   },
   "notFound": {
-    "title": "Seite nicht gefunden",
-    "description": "Diese Seite scheint nicht zu existieren. <0>Klicken Sie hier</0>, um zur Startseite zurückzukehren."
+    "title": "الصفحة غير موجودة",
+    "description": "نعتذر ولكن الصفحة اللتي تحاول الوصول اليها غير موجودة"
   }
 }
